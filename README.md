@@ -3,7 +3,7 @@
 [![Latest Stable Version](https://poser.pugx.org/settled/mcp-laravel/v/stable)](https://packagist.org/packages/settled/mcp-laravel)
 [![License](https://poser.pugx.org/settled/mcp-laravel/license)](//packagist.org/packages/settled/mcp-laravel)
 
-> MCP (Model Context Protocol) for Laravel - A powerful AI framework for building intelligent applications.
+> MCP (Model Context Protocol) for Laravel - A powerful AI framework for building intelligent applications. Based on [inspector-apm/neuron-ai](https://github.com/inspector-apm/neuron-ai)
 
 ## Requirements
 
