@@ -18,7 +18,6 @@ jobs:
         name: PHP ${{ matrix.php }} - ${{ matrix.os }} - ${{ matrix.dependency-version }}
 
         steps:
-
             - name: Checkout
               uses: actions/checkout@v4
 
@@ -36,42 +35,25 @@ jobs:
             - name: Install PHP dependencies
               run: composer update --${{ matrix.dependency-version }} --no-interaction --no-progress --ansi
 
-            - name: Configure sysctl limits (for elastic to boot)
+            - name: Configure sysctl limits
               run: |
                   sudo swapoff -a
                   sudo sysctl -w vm.swappiness=1
                   sudo sysctl -w fs.file-max=262144
                   sudo sysctl -w vm.max_map_count=262144
 
-            - name: Setup Elasticsearch
-              run: |
-                  docker run -d \
-                    --name elasticsearch \
-                    -p 9200:9200 \
-                    -p 9300:9300 \
-                    -e "discovery.type=single-node" \
-                    -e "xpack.security.enabled=false" \
-                    -e "ES_JAVA_OPTS=-Xms512m -Xmx512m" \
-                    docker.elastic.co/elasticsearch/elasticsearch:8.17.0
+            - name: Run Elasticsearch
+              uses: elastic/elastic-github-actions/elasticsearch@master
+              with:
+                  stack-version: 8.17.0
+                  security-enabled: false
 
-            - name: Wait for Elasticsearch to be healthy
-              shell: bash
+            - name: Debug Elasticsearch
               run: |
-                  start_time=$(date +%s)
-                  timeout=120
-                  counter=0
-                  until curl -s http://localhost:9200/_cluster/health | grep -q '"status":"(green|yellow)"'; do
-                    if [ $counter -eq $timeout ]; then
-                      echo "Timed out waiting for Elasticsearch to be healthy"
-                      exit 1
-                    fi
-                    echo "Waiting for Elasticsearch to be healthy..."
-                    sleep 5
-                    counter=$((counter + 1))
-                  done
-                  end_time=$(date +%s)
-                  elapsed=$((end_time - start_time))
-                  echo "Elasticsearch healthcheck elapsed: ${elapsed}s"
+                  echo "Checking Elasticsearch status..."
+                  curl -s http://localhost:9200
+                  echo -e "\n\nChecking cluster health..."
+                  curl -s http://localhost:9200/_cluster/health
 
             - name: Install Typesense Database
               run: |
@@ -114,5 +96,5 @@ jobs:
             - name: Cleanup containers
               if: always()
               run: |
-                  docker stop elasticsearch typesense || true
-                  docker rm elasticsearch typesense || true
+                  docker stop typesense || true
+                  docker rm typesense || true
