@@ -1,6 +1,6 @@
 {
-    "name": "inspector-apm/neuron-ai",
-    "description": "PHP AI Framework with built-in observability.",
+    "name": "settled/mcp-laravel",
+    "description": "MCP (Model Context Protocol) for Laravel - A powerful AI framework for building intelligent applications.",
     "minimum-stability": "stable",
     "license": "MIT",
     "authors": [
@@ -32,12 +32,12 @@
     },
     "autoload": {
         "psr-4": {
-            "NeuronAI\\": "src/"
+            "Settled\\MCP\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "NeuronAI\\Tests\\": "tests/"
+            "Settled\\MCP\\Tests\\": "tests/"
         }
     },
     "config": {

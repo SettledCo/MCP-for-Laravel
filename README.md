@@ -1,13 +1,14 @@
-[![Latest Stable Version](https://poser.pugx.org/inspector-apm/neuron-ai/v/stable)](https://packagist.org/packages/inspector-apm/neuron-ai)
-[![License](https://poser.pugx.org/inspector-apm/neuron-ai/license)](//packagist.org/packages/inspector-apm/neuron-ai)
+# MCP for Laravel
 
-> Before moving on, support the community giving a GitHub star ⭐️. Thank you!
+[![Latest Stable Version](https://poser.pugx.org/settled/mcp-laravel/v/stable)](https://packagist.org/packages/settled/mcp-laravel)
+[![License](https://poser.pugx.org/settled/mcp-laravel/license)](//packagist.org/packages/settled/mcp-laravel)
 
-![](./docs/img/neuron-ai-php-framework.png)
+> MCP (Model Context Protocol) for Laravel - A powerful AI framework for building intelligent applications.
 
 ## Requirements
 
 - PHP: ^8.0
+- Laravel: ^11.0
 
 ## Official documentation
 
@@ -17,22 +18,21 @@
 
 Install the latest version of the package:
 
-```
-composer require inspector-apm/neuron-ai
+```bash
+composer require settled/mcp-laravel
 ```
 
 ## Create an Agent
 
-Neuron provides you with the Agent class you can extend to inherit the main features of the framework,
+MCP for Laravel provides you with the Agent class you can extend to inherit the main features of the framework,
 and create fully functional agents. This class automatically manages some advanced mechanisms for you such as memory,
-tools and function calls, up to the RAG systems. You can go deeper into these aspects in the [documentation](https://docs.neuron-ai.dev).
-In the meantime, let's create the first agent, extending the `NeuronAI\Agent` class:
+tools and function calls, up to the RAG systems. Let's create the first agent, extending the `Settled\MCP\Agent` class:
 
 ```php
-use NeuronAI\Agent;
-use NeuronAI\SystemPrompt;
-use NeuronAI\Providers\AIProviderInterface;
-use NeuronAI\Providers\Anthropic\Anthropic;
+use Settled\MCP\Agent;
+use Settled\MCP\SystemPrompt;
+use Settled\MCP\Providers\AIProviderInterface;
+use Settled\MCP\Providers\Anthropic\Anthropic;
 
 class YouTubeAgent extends Agent
 {
