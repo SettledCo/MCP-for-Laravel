@@ -1,14 +1,14 @@
 <?php
 
-namespace NeuronAI\Tests\Providers;
+namespace Settled\MCP\Tests\Providers;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Middleware;
 use GuzzleHttp\Psr7\Response;
-use NeuronAI\Chat\Messages\UserMessage;
-use NeuronAI\Providers\Ollama\Ollama;
+use Settled\MCP\Chat\Messages\UserMessage;
+use Settled\MCP\Providers\Ollama\Ollama;
 use PHPUnit\Framework\TestCase;
 
 class OllamaTest extends TestCase

@@ -1,11 +1,11 @@
 <?php
 
-namespace NeuronAI\Providers\Ollama;
+namespace Settled\MCP\Providers\Ollama;
 
-use NeuronAI\Chat\Messages\Message;
-use NeuronAI\Chat\Messages\ToolCallMessage;
-use NeuronAI\Chat\Messages\ToolCallResultMessage;
-use NeuronAI\Tools\ToolInterface;
+use Settled\MCP\Chat\Messages\Message;
+use Settled\MCP\Chat\Messages\ToolCallMessage;
+use Settled\MCP\Chat\Messages\ToolCallResultMessage;
+use Settled\MCP\Tools\ToolInterface;
 
 class MessageMapper
 {

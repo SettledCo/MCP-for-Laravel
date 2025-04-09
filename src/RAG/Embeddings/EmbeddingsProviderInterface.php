@@ -1,8 +1,8 @@
 <?php
 
-namespace NeuronAI\RAG\Embeddings;
+namespace Settled\MCP\RAG\Embeddings;
 
-use NeuronAI\RAG\Document;
+use Settled\MCP\RAG\Document;
 
 interface EmbeddingsProviderInterface
 {

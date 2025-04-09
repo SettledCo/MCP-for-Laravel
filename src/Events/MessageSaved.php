@@ -1,8 +1,8 @@
 <?php
 
-namespace NeuronAI\Events;
+namespace Settled\MCP\Events;
 
-use NeuronAI\Chat\Messages\Message;
+use Settled\MCP\Chat\Messages\Message;
 
 class MessageSaved
 {

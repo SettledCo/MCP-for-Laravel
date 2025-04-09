@@ -1,8 +1,8 @@
 <?php
 
-namespace NeuronAI;
+namespace Settled\MCP;
 
-use NeuronAI\Tools\ToolInterface;
+use Settled\MCP\Tools\ToolInterface;
 
 trait ResolveTools
 {

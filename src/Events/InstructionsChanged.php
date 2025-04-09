@@ -1,6 +1,6 @@
 <?php
 
-namespace NeuronAI\Events;
+namespace Settled\MCP\Events;
 
 class InstructionsChanged
 {

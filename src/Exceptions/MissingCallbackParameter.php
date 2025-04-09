@@ -1,8 +1,8 @@
 <?php
 
-namespace NeuronAI\Exceptions;
+namespace Settled\MCP\Exceptions;
 
-class MissingCallbackParameter extends NeuronException
+class MissingCallbackParameter extends McpException
 {
 
 }

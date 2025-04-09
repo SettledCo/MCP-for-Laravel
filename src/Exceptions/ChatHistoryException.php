@@ -1,8 +1,8 @@
 <?php
 
-namespace NeuronAI\Exceptions;
+namespace Settled\MCP\Exceptions;
 
-class ChatHistoryException extends NeuronException
+class ChatHistoryException extends McpException
 {
 
 }

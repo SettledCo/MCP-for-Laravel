@@ -1,10 +1,10 @@
 <?php
 
-namespace NeuronAI\Providers\OpenAI;
+namespace Settled\MCP\Providers\OpenAI;
 
 use GuzzleHttp\Exception\GuzzleException;
-use NeuronAI\Chat\Messages\AssistantMessage;
-use NeuronAI\Exceptions\ProviderException;
+use Settled\MCP\Chat\Messages\AssistantMessage;
+use Settled\MCP\Exceptions\ProviderException;
 use Psr\Http\Message\StreamInterface;
 
 trait HandleStream

@@ -1,10 +1,10 @@
 <?php
 
-namespace NeuronAI\RAG\VectorStore;
+namespace Settled\MCP\RAG\VectorStore;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\RequestOptions;
-use NeuronAI\RAG\Document;
+use Settled\MCP\RAG\Document;
 
 class PineconeVectorStore implements VectorStoreInterface
 {

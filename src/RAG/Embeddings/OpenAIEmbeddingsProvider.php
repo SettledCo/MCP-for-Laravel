@@ -1,6 +1,6 @@
 <?php
 
-namespace NeuronAI\RAG\Embeddings;
+namespace Settled\MCP\RAG\Embeddings;
 
 use GuzzleHttp\Client;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace NeuronAI\Tools;
+namespace Settled\MCP\Tools;
 
 interface ToolInterface extends \JsonSerializable
 {

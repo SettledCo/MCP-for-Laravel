@@ -1,12 +1,12 @@
 <?php
 
-namespace NeuronAI\Tests\VectorStore;
+namespace Settled\MCP\Tests\VectorStore;
 
 use Elastic\Elasticsearch\Client;
 use Elastic\Elasticsearch\ClientBuilder;
-use NeuronAI\RAG\Document;
-use NeuronAI\RAG\VectorStore\ElasticsearchVectorStore;
-use NeuronAI\RAG\VectorStore\VectorStoreInterface;
+use Settled\MCP\RAG\Document;
+use Settled\MCP\RAG\VectorStore\ElasticsearchVectorStore;
+use Settled\MCP\RAG\VectorStore\VectorStoreInterface;
 use PHPUnit\Framework\TestCase;
 
 class ElasticsearchTest extends TestCase

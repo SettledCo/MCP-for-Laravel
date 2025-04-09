@@ -1,9 +1,9 @@
 <?php
 
-namespace NeuronAI\Providers\Anthropic;
+namespace Settled\MCP\Providers\Anthropic;
 
 use GuzzleHttp\Exception\GuzzleException;
-use NeuronAI\Exceptions\ProviderException;
+use Settled\MCP\Exceptions\ProviderException;
 use Psr\Http\Message\StreamInterface;
 
 trait HandleStream

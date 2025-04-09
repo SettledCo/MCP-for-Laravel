@@ -1,8 +1,8 @@
 <?php
 
-namespace NeuronAI\RAG\Splitters;
+namespace Settled\MCP\RAG\Splitters;
 
-use NeuronAI\RAG\Document;
+use Settled\MCP\RAG\Document;
 
 class DocumentSplitter
 {

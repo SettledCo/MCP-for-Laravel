@@ -1,8 +1,8 @@
 <?php
 
-namespace NeuronAI\Providers\Ollama;
+namespace Settled\MCP\Providers\Ollama;
 
-use NeuronAI\Chat\Messages\Message;
+use Settled\MCP\Chat\Messages\Message;
 use Psr\Http\Message\StreamInterface;
 
 trait HandleStream

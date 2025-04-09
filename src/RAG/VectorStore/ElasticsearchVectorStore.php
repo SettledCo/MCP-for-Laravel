@@ -1,10 +1,10 @@
 <?php
 
-namespace NeuronAI\RAG\VectorStore;
+namespace Settled\MCP\RAG\VectorStore;
 
 use Elastic\Elasticsearch\Exception\ClientResponseException;
 use Elastic\Elasticsearch\Exception\ServerResponseException;
-use NeuronAI\RAG\Document;
+use Settled\MCP\RAG\Document;
 use Elastic\Elasticsearch\Client;
 use Elastic\Elasticsearch\Response\Elasticsearch;
 

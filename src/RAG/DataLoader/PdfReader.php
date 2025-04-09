@@ -1,9 +1,9 @@
 <?php
 
-namespace NeuronAI\RAG\DataLoader;
+namespace Settled\MCP\RAG\DataLoader;
 
 use Closure;
-use NeuronAI\Exceptions\DataReaderException;
+use Settled\MCP\Exceptions\DataReaderException;
 use Symfony\Component\Process\Exception\ProcessFailedException;
 use Symfony\Component\Process\Process;
 

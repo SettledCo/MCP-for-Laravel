@@ -1,10 +1,10 @@
 <?php
 
-namespace NeuronAI\Chat\History;
+namespace Settled\MCP\Chat\History;
 
-use NeuronAI\Chat\Messages\Message;
-use NeuronAI\Chat\Messages\Usage;
-use NeuronAI\Exceptions\ChatHistoryException;
+use Settled\MCP\Chat\Messages\Message;
+use Settled\MCP\Chat\Messages\Usage;
+use Settled\MCP\Exceptions\ChatHistoryException;
 
 class FileChatHistory extends AbstractChatHistory
 {
@@ -12,7 +12,7 @@ class FileChatHistory extends AbstractChatHistory
         protected string $directory,
         protected string $key,
         int $contextWindow = 50000,
-        protected string $prefix = 'neuron_',
+        protected string $prefix = 'mcp_',
         protected string $ext = '.chat'
     ) {
         parent::__construct($contextWindow);

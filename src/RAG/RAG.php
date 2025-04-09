@@ -1,18 +1,18 @@
 <?php
 
-namespace NeuronAI\RAG;
+namespace Settled\MCP\RAG;
 
-use NeuronAI\Agent;
-use NeuronAI\Chat\Messages\Message;
-use NeuronAI\Events\InstructionsChanged;
-use NeuronAI\Events\InstructionsChanging;
-use NeuronAI\Events\VectorStoreResult;
-use NeuronAI\Events\VectorStoreSearching;
-use NeuronAI\Exceptions\MissingCallbackParameter;
-use NeuronAI\Exceptions\ToolCallableNotSet;
-use NeuronAI\RAG\Embeddings\EmbeddingsProviderInterface;
-use NeuronAI\RAG\VectorStore\VectorStoreInterface;
-use NeuronAI\SystemPrompt;
+use Settled\MCP\Agent;
+use Settled\MCP\Chat\Messages\Message;
+use Settled\MCP\Events\InstructionsChanged;
+use Settled\MCP\Events\InstructionsChanging;
+use Settled\MCP\Events\VectorStoreResult;
+use Settled\MCP\Events\VectorStoreSearching;
+use Settled\MCP\Exceptions\MissingCallbackParameter;
+use Settled\MCP\Exceptions\ToolCallableNotSet;
+use Settled\MCP\RAG\Embeddings\EmbeddingsProviderInterface;
+use Settled\MCP\RAG\VectorStore\VectorStoreInterface;
+use Settled\MCP\SystemPrompt;
 
 class RAG extends Agent
 {

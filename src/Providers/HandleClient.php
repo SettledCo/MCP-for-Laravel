@@ -1,6 +1,6 @@
 <?php
 
-namespace NeuronAI\Providers;
+namespace Settled\MCP\Providers;
 
 use GuzzleHttp\Client;
 

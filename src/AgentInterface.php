@@ -1,11 +1,11 @@
 <?php
 
-namespace NeuronAI;
+namespace Settled\MCP;
 
-use NeuronAI\Chat\History\AbstractChatHistory;
-use NeuronAI\Chat\Messages\Message;
-use NeuronAI\Providers\AIProviderInterface;
-use NeuronAI\Tools\ToolInterface;
+use Settled\MCP\Chat\History\AbstractChatHistory;
+use Settled\MCP\Chat\Messages\Message;
+use Settled\MCP\Providers\AIProviderInterface;
+use Settled\MCP\Tools\ToolInterface;
 
 interface AgentInterface extends \SplSubject
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace NeuronAI\Tests;
+namespace Settled\MCP\Tests;
 
-use NeuronAI\RAG\DataLoader\StringDataLoader;
-use NeuronAI\RAG\Document;
-use NeuronAI\RAG\Splitters\DocumentSplitter;
+use Settled\MCP\RAG\DataLoader\StringDataLoader;
+use Settled\MCP\RAG\Document;
+use Settled\MCP\RAG\Splitters\DocumentSplitter;
 use PHPUnit\Framework\TestCase;
 
 class DataLoaderTest extends TestCase

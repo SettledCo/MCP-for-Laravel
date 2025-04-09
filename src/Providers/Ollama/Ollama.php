@@ -1,15 +1,15 @@
 <?php
 
-namespace NeuronAI\Providers\Ollama;
+namespace Settled\MCP\Providers\Ollama;
 
 use GuzzleHttp\Client;
-use NeuronAI\Chat\Messages\Message;
-use NeuronAI\Chat\Messages\ToolCallMessage;
-use NeuronAI\Providers\AIProviderInterface;
-use NeuronAI\Providers\HandleClient;
-use NeuronAI\Providers\HandleWithTools;
-use NeuronAI\Tools\ToolInterface;
-use NeuronAI\Tools\ToolProperty;
+use Settled\MCP\Chat\Messages\Message;
+use Settled\MCP\Chat\Messages\ToolCallMessage;
+use Settled\MCP\Providers\AIProviderInterface;
+use Settled\MCP\Providers\HandleClient;
+use Settled\MCP\Providers\HandleWithTools;
+use Settled\MCP\Tools\ToolInterface;
+use Settled\MCP\Tools\ToolProperty;
 
 class Ollama implements AIProviderInterface
 {

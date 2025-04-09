@@ -1,9 +1,9 @@
 <?php
 
-namespace NeuronAI\Chat\History;
+namespace Settled\MCP\Chat\History;
 
-use NeuronAI\Chat\Messages\Message;
-use NeuronAI\Chat\Messages\Usage;
+use Settled\MCP\Chat\Messages\Message;
+use Settled\MCP\Chat\Messages\Usage;
 
 abstract class AbstractChatHistory implements ChatHistoryInterface
 {

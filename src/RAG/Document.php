@@ -1,6 +1,6 @@
 <?php
 
-namespace NeuronAI\RAG;
+namespace Settled\MCP\RAG;
 
 class Document implements \JsonSerializable
 {

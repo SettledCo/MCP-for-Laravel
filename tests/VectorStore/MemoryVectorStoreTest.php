@@ -1,10 +1,10 @@
 <?php
 
-namespace NeuronAI\Tests\VectorStore;
+namespace Settled\MCP\Tests\VectorStore;
 
-use NeuronAI\RAG\Document;
-use NeuronAI\RAG\VectorStore\MemoryVectorStore;
-use NeuronAI\RAG\VectorStore\VectorStoreInterface;
+use Settled\MCP\RAG\Document;
+use Settled\MCP\RAG\VectorStore\MemoryVectorStore;
+use Settled\MCP\RAG\VectorStore\VectorStoreInterface;
 use PHPUnit\Framework\TestCase;
 
 class MemoryVectorStoreTest extends TestCase

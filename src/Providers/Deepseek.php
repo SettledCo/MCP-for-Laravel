@@ -1,8 +1,8 @@
 <?php
 
-namespace NeuronAI\Providers;
+namespace Settled\MCP\Providers;
 
-use NeuronAI\Providers\OpenAI\OpenAI;
+use Settled\MCP\Providers\OpenAI\OpenAI;
 
 class Deepseek extends OpenAI
 {

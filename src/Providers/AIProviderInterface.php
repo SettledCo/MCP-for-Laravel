@@ -1,9 +1,9 @@
 <?php
 
-namespace NeuronAI\Providers;
+namespace Settled\MCP\Providers;
 
-use NeuronAI\Chat\Messages\Message;
-use NeuronAI\Tools\ToolInterface;
+use Settled\MCP\Chat\Messages\Message;
+use Settled\MCP\Tools\ToolInterface;
 
 interface AIProviderInterface
 {

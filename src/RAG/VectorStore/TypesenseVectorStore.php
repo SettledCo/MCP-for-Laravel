@@ -1,8 +1,8 @@
 <?php
 
-namespace NeuronAI\RAG\VectorStore;
+namespace Settled\MCP\RAG\VectorStore;
 
-use NeuronAI\RAG\Document;
+use Settled\MCP\RAG\Document;
 use Typesense\Client;
 use Typesense\Exceptions\ObjectNotFound;
 

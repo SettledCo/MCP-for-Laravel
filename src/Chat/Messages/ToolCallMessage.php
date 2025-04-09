@@ -1,8 +1,8 @@
 <?php
 
-namespace NeuronAI\Chat\Messages;
+namespace Settled\MCP\Chat\Messages;
 
-use NeuronAI\Tools\Tool;
+use Settled\MCP\Tools\Tool;
 
 class ToolCallMessage extends AssistantMessage
 {

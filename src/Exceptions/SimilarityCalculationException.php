@@ -1,8 +1,8 @@
 <?php
 
-namespace NeuronAI\Exceptions;
+namespace Settled\MCP\Exceptions;
 
-class SimilarityCalculationException extends NeuronException
+class SimilarityCalculationException extends McpException
 {
 
 }

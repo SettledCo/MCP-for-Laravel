@@ -1,10 +1,10 @@
 <?php
 
-namespace NeuronAI\Providers\OpenAI;
+namespace Settled\MCP\Providers\OpenAI;
 
-use NeuronAI\Chat\Messages\Message;
-use NeuronAI\Chat\Messages\ToolCallMessage;
-use NeuronAI\Chat\Messages\ToolCallResultMessage;
+use Settled\MCP\Chat\Messages\Message;
+use Settled\MCP\Chat\Messages\ToolCallMessage;
+use Settled\MCP\Chat\Messages\ToolCallResultMessage;
 
 class MessageMapper
 {

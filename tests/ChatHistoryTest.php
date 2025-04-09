@@ -1,13 +1,13 @@
 <?php
 
-namespace NeuronAI\Tests;
+namespace Settled\MCP\Tests;
 
-use NeuronAI\Chat\History\AbstractChatHistory;
-use NeuronAI\Chat\History\FileChatHistory;
-use NeuronAI\Chat\History\InMemoryChatHistory;
-use NeuronAI\Chat\Messages\Usage;
-use NeuronAI\Chat\Messages\UserMessage;
-use NeuronAI\Exceptions\ChatHistoryException;
+use Settled\MCP\Chat\History\AbstractChatHistory;
+use Settled\MCP\Chat\History\FileChatHistory;
+use Settled\MCP\Chat\History\InMemoryChatHistory;
+use Settled\MCP\Chat\Messages\Usage;
+use Settled\MCP\Chat\Messages\UserMessage;
+use Settled\MCP\Exceptions\ChatHistoryException;
 use PHPUnit\Framework\TestCase;
 
 class ChatHistoryTest extends TestCase
@@ -60,14 +60,14 @@ class ChatHistoryTest extends TestCase
     public function test_file_chat_history()
     {
         $history = new FileChatHistory(__DIR__, 'test');
-        $this->assertFileDoesNotExist(__DIR__.DIRECTORY_SEPARATOR.'neuron_test.chat');
+        $this->assertFileDoesNotExist(__DIR__.DIRECTORY_SEPARATOR.'mcp_test.chat');
 
         $history->addMessage(new UserMessage('Hello!'));
-        $this->assertFileExists(__DIR__.DIRECTORY_SEPARATOR.'neuron_test.chat');
+        $this->assertFileExists(__DIR__.DIRECTORY_SEPARATOR.'mcp_test.chat');
         $this->assertCount(1, $history->getMessages());
 
         $history->clear();
-        $this->assertFileDoesNotExist(__DIR__.DIRECTORY_SEPARATOR.'neuron_test.chat');
+        $this->assertFileDoesNotExist(__DIR__.DIRECTORY_SEPARATOR.'mcp_test.chat');
         $this->assertCount(0, $history->getMessages());
     }
 
@@ -75,7 +75,7 @@ class ChatHistoryTest extends TestCase
     {
         $history = new FileChatHistory(__DIR__, 'test');
         $history->addMessage(new UserMessage('Hello!'));
-        $this->assertFileExists(__DIR__.DIRECTORY_SEPARATOR.'neuron_test.chat');
+        $this->assertFileExists(__DIR__.DIRECTORY_SEPARATOR.'mcp_test.chat');
 
         $history = new FileChatHistory(__DIR__, 'test');
         $this->assertCount(1, $history->getMessages());

@@ -1,24 +1,24 @@
 <?php
 
-namespace NeuronAI\Observability;
+namespace Settled\MCP\Observability;
 
 use Inspector\Inspector;
 use Inspector\Models\Segment;
-use NeuronAI\Chat\Messages\Message;
-use NeuronAI\Chat\Messages\ToolCallMessage;
-use NeuronAI\Chat\Messages\ToolCallResultMessage;
-use NeuronAI\Events\InstructionsChanged;
-use NeuronAI\Events\InstructionsChanging;
-use NeuronAI\Events\MessageSaved;
-use NeuronAI\Events\MessageSaving;
-use NeuronAI\Events\MessageSending;
-use NeuronAI\Events\MessageSent;
-use NeuronAI\Events\ToolCalled;
-use NeuronAI\Events\ToolCalling;
-use NeuronAI\Events\VectorStoreResult;
-use NeuronAI\Events\VectorStoreSearching;
-use NeuronAI\Tools\Tool;
-use NeuronAI\Tools\ToolProperty;
+use Settled\MCP\Chat\Messages\Message;
+use Settled\MCP\Chat\Messages\ToolCallMessage;
+use Settled\MCP\Chat\Messages\ToolCallResultMessage;
+use Settled\MCP\Events\InstructionsChanged;
+use Settled\MCP\Events\InstructionsChanging;
+use Settled\MCP\Events\MessageSaved;
+use Settled\MCP\Events\MessageSaving;
+use Settled\MCP\Events\MessageSending;
+use Settled\MCP\Events\MessageSent;
+use Settled\MCP\Events\ToolCalled;
+use Settled\MCP\Events\ToolCalling;
+use Settled\MCP\Events\VectorStoreResult;
+use Settled\MCP\Events\VectorStoreSearching;
+use Settled\MCP\Tools\Tool;
+use Settled\MCP\Tools\ToolProperty;
 
 /**
  * Trace your AI agent implementations to detect errors and performance bottlenecks in real-time.

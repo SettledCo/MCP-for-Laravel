@@ -1,9 +1,9 @@
 <?php
 
-namespace NeuronAI\RAG\VectorStore;
+namespace Settled\MCP\RAG\VectorStore;
 
-use NeuronAI\Exceptions\SimilarityCalculationException;
-use NeuronAI\RAG\Document;
+use Settled\MCP\Exceptions\SimilarityCalculationException;
+use Settled\MCP\RAG\Document;
 
 class MemoryVectorStore implements VectorStoreInterface
 {

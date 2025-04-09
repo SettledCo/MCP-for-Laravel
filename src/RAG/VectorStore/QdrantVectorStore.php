@@ -1,11 +1,11 @@
 <?php
 
-namespace NeuronAI\RAG\VectorStore;
+namespace Settled\MCP\RAG\VectorStore;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\RequestOptions;
-use NeuronAI\RAG\Document;
+use Settled\MCP\RAG\Document;
 
 class QdrantVectorStore implements VectorStoreInterface
 {

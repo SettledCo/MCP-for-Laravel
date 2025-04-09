@@ -1,8 +1,8 @@
 <?php
 
-namespace NeuronAI\Events;
+namespace Settled\MCP\Events;
 
-use NeuronAI\Tools\ToolInterface;
+use Settled\MCP\Tools\ToolInterface;
 
 class ToolCalled
 {

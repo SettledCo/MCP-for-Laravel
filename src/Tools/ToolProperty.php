@@ -1,6 +1,6 @@
 <?php
 
-namespace NeuronAI\Tools;
+namespace Settled\MCP\Tools;
 
 class ToolProperty implements \JsonSerializable
 {

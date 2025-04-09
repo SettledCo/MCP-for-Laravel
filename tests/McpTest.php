@@ -1,21 +1,21 @@
 <?php
 
-namespace NeuronAI\Tests;
+namespace Settled\MCP\Tests;
 
 
-use NeuronAI\Agent;
-use NeuronAI\AgentInterface;
-use NeuronAI\Chat\Messages\AssistantMessage;
-use NeuronAI\Chat\Messages\Message;
-use NeuronAI\Chat\Messages\UserMessage;
-use NeuronAI\RAG\RAG;
-use NeuronAI\SystemPrompt;
-use NeuronAI\Tools\Tool;
-use NeuronAI\Chat\Messages\ToolCallMessage;
-use NeuronAI\Tools\ToolInterface;
+use Settled\MCP\Agent;
+use Settled\MCP\AgentInterface;
+use Settled\MCP\Chat\Messages\AssistantMessage;
+use Settled\MCP\Chat\Messages\Message;
+use Settled\MCP\Chat\Messages\UserMessage;
+use Settled\MCP\RAG\RAG;
+use Settled\MCP\SystemPrompt;
+use Settled\MCP\Tools\Tool;
+use Settled\MCP\Chat\Messages\ToolCallMessage;
+use Settled\MCP\Tools\ToolInterface;
 use PHPUnit\Framework\TestCase;
 
-class NeuronAITest extends TestCase
+class McpTest extends TestCase
 {
     /**
      * Sets up the fixture, for example, open a network connection.

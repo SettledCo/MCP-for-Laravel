@@ -1,14 +1,14 @@
 <?php
 
-namespace NeuronAI\Providers\Anthropic;
+namespace Settled\MCP\Providers\Anthropic;
 
-use NeuronAI\Chat\Messages\Message;
-use NeuronAI\Providers\AIProviderInterface;
-use NeuronAI\Providers\HandleClient;
-use NeuronAI\Providers\HandleWithTools;
-use NeuronAI\Chat\Messages\ToolCallMessage;
-use NeuronAI\Tools\ToolInterface;
-use NeuronAI\Tools\ToolProperty;
+use Settled\MCP\Chat\Messages\Message;
+use Settled\MCP\Providers\AIProviderInterface;
+use Settled\MCP\Providers\HandleClient;
+use Settled\MCP\Providers\HandleWithTools;
+use Settled\MCP\Chat\Messages\ToolCallMessage;
+use Settled\MCP\Tools\ToolInterface;
+use Settled\MCP\Tools\ToolProperty;
 use GuzzleHttp\Client;
 
 class Anthropic implements AIProviderInterface

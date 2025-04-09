@@ -1,9 +1,9 @@
 <?php
 
-namespace NeuronAI\Events;
+namespace Settled\MCP\Events;
 
-use NeuronAI\Chat\Messages\Message;
-use NeuronAI\RAG\Document;
+use Settled\MCP\Chat\Messages\Message;
+use Settled\MCP\RAG\Document;
 
 class VectorStoreResult
 {

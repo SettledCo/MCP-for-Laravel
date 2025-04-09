@@ -1,9 +1,9 @@
 <?php
 
-namespace NeuronAI\RAG\DataLoader;
+namespace Settled\MCP\RAG\DataLoader;
 
-use NeuronAI\RAG\Document;
-use NeuronAI\RAG\Splitters\DocumentSplitter;
+use Settled\MCP\RAG\Document;
+use Settled\MCP\RAG\Splitters\DocumentSplitter;
 
 class StringDataLoader extends AbstractDataLoader
 {

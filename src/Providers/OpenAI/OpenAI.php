@@ -1,19 +1,19 @@
 <?php
 
-namespace NeuronAI\Providers\OpenAI;
+namespace Settled\MCP\Providers\OpenAI;
 
 use GuzzleHttp\Exception\GuzzleException;
-use NeuronAI\Chat\Messages\AssistantMessage;
-use NeuronAI\Chat\Messages\Message;
+use Settled\MCP\Chat\Messages\AssistantMessage;
+use Settled\MCP\Chat\Messages\Message;
 use GuzzleHttp\Client;
-use NeuronAI\Chat\Messages\Usage;
-use NeuronAI\Exceptions\ProviderException;
-use NeuronAI\Providers\AIProviderInterface;
-use NeuronAI\Providers\HandleClient;
-use NeuronAI\Providers\HandleWithTools;
-use NeuronAI\Chat\Messages\ToolCallMessage;
-use NeuronAI\Tools\ToolInterface;
-use NeuronAI\Tools\ToolProperty;
+use Settled\MCP\Chat\Messages\Usage;
+use Settled\MCP\Exceptions\ProviderException;
+use Settled\MCP\Providers\AIProviderInterface;
+use Settled\MCP\Providers\HandleClient;
+use Settled\MCP\Providers\HandleWithTools;
+use Settled\MCP\Chat\Messages\ToolCallMessage;
+use Settled\MCP\Tools\ToolInterface;
+use Settled\MCP\Tools\ToolProperty;
 use Psr\Http\Message\StreamInterface;
 
 class OpenAI implements AIProviderInterface

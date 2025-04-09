@@ -1,6 +1,6 @@
 <?php
 
-namespace NeuronAI\RAG\DataLoader;
+namespace Settled\MCP\RAG\DataLoader;
 
 abstract class AbstractDataLoader implements DataLoaderInterface
 {

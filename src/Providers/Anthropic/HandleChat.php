@@ -1,11 +1,11 @@
 <?php
 
-namespace NeuronAI\Providers\Anthropic;
+namespace Settled\MCP\Providers\Anthropic;
 
 use GuzzleHttp\Exception\GuzzleException;
-use NeuronAI\Chat\Messages\AssistantMessage;
-use NeuronAI\Chat\Messages\Message;
-use NeuronAI\Chat\Messages\Usage;
+use Settled\MCP\Chat\Messages\AssistantMessage;
+use Settled\MCP\Chat\Messages\Message;
+use Settled\MCP\Chat\Messages\Usage;
 
 trait HandleChat
 {

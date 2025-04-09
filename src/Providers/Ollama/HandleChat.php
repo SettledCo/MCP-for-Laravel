@@ -1,11 +1,11 @@
 <?php
 
-namespace NeuronAI\Providers\Ollama;
+namespace Settled\MCP\Providers\Ollama;
 
-use NeuronAI\Chat\Messages\AssistantMessage;
-use NeuronAI\Chat\Messages\Message;
-use NeuronAI\Chat\Messages\Usage;
-use NeuronAI\Exceptions\ProviderException;
+use Settled\MCP\Chat\Messages\AssistantMessage;
+use Settled\MCP\Chat\Messages\Message;
+use Settled\MCP\Chat\Messages\Usage;
+use Settled\MCP\Exceptions\ProviderException;
 
 trait HandleChat
 {

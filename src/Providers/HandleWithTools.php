@@ -1,8 +1,8 @@
 <?php
 
-namespace NeuronAI\Providers;
+namespace Settled\MCP\Providers;
 
-use NeuronAI\Tools\Tool;
+use Settled\MCP\Tools\Tool;
 
 trait HandleWithTools
 {

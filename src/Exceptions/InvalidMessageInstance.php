@@ -1,8 +1,8 @@
 <?php
 
-namespace NeuronAI\Exceptions;
+namespace Settled\MCP\Exceptions;
 
-class InvalidMessageInstance extends NeuronException
+class InvalidMessageInstance extends McpException
 {
 
 }

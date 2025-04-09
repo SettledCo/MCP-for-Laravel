@@ -1,10 +1,10 @@
 <?php
 
-namespace NeuronAI\Tests\VectorStore;
+namespace Settled\MCP\Tests\VectorStore;
 
-use NeuronAI\RAG\Document;
-use NeuronAI\RAG\VectorStore\TypesenseVectorStore;
-use NeuronAI\RAG\VectorStore\VectorStoreInterface;
+use Settled\MCP\RAG\Document;
+use Settled\MCP\RAG\VectorStore\TypesenseVectorStore;
+use Settled\MCP\RAG\VectorStore\VectorStoreInterface;
 use PHPUnit\Framework\TestCase;
 use Typesense\Client;
 

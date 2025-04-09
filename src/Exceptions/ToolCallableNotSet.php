@@ -1,8 +1,8 @@
 <?php
 
-namespace NeuronAI\Exceptions;
+namespace Settled\MCP\Exceptions;
 
-class ToolCallableNotSet extends NeuronException
+class ToolCallableNotSet extends McpException
 {
 
 }

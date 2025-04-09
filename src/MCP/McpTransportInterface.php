@@ -1,6 +1,6 @@
 <?php
 
-namespace NeuronAI\MCP;
+namespace Settled\MCP\MCP;
 
 interface McpTransportInterface
 {

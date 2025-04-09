@@ -1,27 +1,27 @@
 <?php
 
-namespace NeuronAI;
+namespace Settled\MCP;
 
-use NeuronAI\Chat\History\InMemoryChatHistory;
-use NeuronAI\Chat\Messages\AssistantMessage;
-use NeuronAI\Chat\Messages\ToolCallResultMessage;
-use NeuronAI\Chat\Messages\Usage;
-use NeuronAI\Events\MessageSaved;
-use NeuronAI\Events\MessageSaving;
-use NeuronAI\Events\MessageSending;
-use NeuronAI\Events\MessageSent;
-use NeuronAI\Events\ToolCalled;
-use NeuronAI\Events\ToolCalling;
-use NeuronAI\Exceptions\InvalidMessageInstance;
-use NeuronAI\Exceptions\MissingCallbackParameter;
-use NeuronAI\Exceptions\ToolCallableNotSet;
-use NeuronAI\Observability\AgentMonitoring;
-use NeuronAI\Providers\AIProviderInterface;
-use NeuronAI\Chat\Messages\Message;
-use NeuronAI\Chat\Messages\UserMessage;
-use NeuronAI\Tools\Tool;
-use NeuronAI\Chat\Messages\ToolCallMessage;
-use NeuronAI\Tools\ToolInterface;
+use Settled\MCP\Chat\History\InMemoryChatHistory;
+use Settled\MCP\Chat\Messages\AssistantMessage;
+use Settled\MCP\Chat\Messages\ToolCallResultMessage;
+use Settled\MCP\Chat\Messages\Usage;
+use Settled\MCP\Events\MessageSaved;
+use Settled\MCP\Events\MessageSaving;
+use Settled\MCP\Events\MessageSending;
+use Settled\MCP\Events\MessageSent;
+use Settled\MCP\Events\ToolCalled;
+use Settled\MCP\Events\ToolCalling;
+use Settled\MCP\Exceptions\InvalidMessageInstance;
+use Settled\MCP\Exceptions\MissingCallbackParameter;
+use Settled\MCP\Exceptions\ToolCallableNotSet;
+use Settled\MCP\Observability\AgentMonitoring;
+use Settled\MCP\Providers\AIProviderInterface;
+use Settled\MCP\Chat\Messages\Message;
+use Settled\MCP\Chat\Messages\UserMessage;
+use Settled\MCP\Tools\Tool;
+use Settled\MCP\Chat\Messages\ToolCallMessage;
+use Settled\MCP\Tools\ToolInterface;
 
 class Agent implements AgentInterface
 {
@@ -41,7 +41,7 @@ class Agent implements AgentInterface
      *
      * @var string
      */
-    protected string $instructions = 'Your are a helpful and friendly AI assistant built with Neuron AI PHP framework.';
+    protected string $instructions = 'Your are a helpful and friendly AI assistant built with MCP Laravel framework.';
 
     /**
      * @var array<\SplObserver>

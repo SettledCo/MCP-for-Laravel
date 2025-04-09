@@ -1,9 +1,9 @@
 <?php
 
-namespace NeuronAI;
+namespace Settled\MCP;
 
-use NeuronAI\Chat\History\AbstractChatHistory;
-use NeuronAI\Chat\History\InMemoryChatHistory;
+use Settled\MCP\Chat\History\AbstractChatHistory;
+use Settled\MCP\Chat\History\InMemoryChatHistory;
 
 trait ResolveChatHistory
 {

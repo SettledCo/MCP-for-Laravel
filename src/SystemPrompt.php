@@ -1,6 +1,6 @@
 <?php
 
-namespace NeuronAI;
+namespace Settled\MCP;
 
 class SystemPrompt implements \Stringable
 {

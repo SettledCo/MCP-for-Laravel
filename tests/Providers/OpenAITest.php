@@ -1,14 +1,14 @@
 <?php
 
-namespace NeuronAI\Tests\Providers;
+namespace Settled\MCP\Tests\Providers;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Middleware;
 use GuzzleHttp\Psr7\Response;
-use NeuronAI\Chat\Messages\UserMessage;
-use NeuronAI\Providers\OpenAI\OpenAI;
+use Settled\MCP\Chat\Messages\UserMessage;
+use Settled\MCP\Providers\OpenAI\OpenAI;
 use PHPUnit\Framework\TestCase;
 
 class OpenAITest extends TestCase

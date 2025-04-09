@@ -1,10 +1,10 @@
 <?php
 
-namespace NeuronAI\Tools;
+namespace Settled\MCP\Tools;
 
-use NeuronAI\Exceptions\MissingCallbackParameter;
-use NeuronAI\Exceptions\ToolCallableNotSet;
-use NeuronAI\StaticConstructor;
+use Settled\MCP\Exceptions\MissingCallbackParameter;
+use Settled\MCP\Exceptions\ToolCallableNotSet;
+use Settled\MCP\StaticConstructor;
 
 class Tool implements ToolInterface
 {

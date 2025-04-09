@@ -1,9 +1,9 @@
 <?php
 
-namespace NeuronAI\MCP;
+namespace Settled\MCP\MCP;
 
-use NeuronAI\StaticConstructor;
-use NeuronAI\Tools\ToolInterface;
+use Settled\MCP\StaticConstructor;
+use Settled\MCP\Tools\ToolInterface;
 
 class McpConnector
 {
