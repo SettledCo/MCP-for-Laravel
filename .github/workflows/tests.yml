@@ -43,11 +43,35 @@ jobs:
                   sudo sysctl -w fs.file-max=262144
                   sudo sysctl -w vm.max_map_count=262144
 
-            - name: Runs Elasticsearch
-              uses: elastic/elastic-github-actions/elasticsearch@master
-              with:
-                  stack-version: 8.17.0
-                  security-enabled: false
+            - name: Setup Elasticsearch
+              run: |
+                  docker run -d \
+                    --name elasticsearch \
+                    -p 9200:9200 \
+                    -p 9300:9300 \
+                    -e "discovery.type=single-node" \
+                    -e "xpack.security.enabled=false" \
+                    -e "ES_JAVA_OPTS=-Xms512m -Xmx512m" \
+                    docker.elastic.co/elasticsearch/elasticsearch:8.17.0
+
+            - name: Wait for Elasticsearch to be healthy
+              shell: bash
+              run: |
+                  start_time=$(date +%s)
+                  timeout=120
+                  counter=0
+                  until curl -s http://localhost:9200/_cluster/health | grep -q '"status":"(green|yellow)"'; do
+                    if [ $counter -eq $timeout ]; then
+                      echo "Timed out waiting for Elasticsearch to be healthy"
+                      exit 1
+                    fi
+                    echo "Waiting for Elasticsearch to be healthy..."
+                    sleep 5
+                    counter=$((counter + 1))
+                  done
+                  end_time=$(date +%s)
+                  elapsed=$((end_time - start_time))
+                  echo "Elasticsearch healthcheck elapsed: ${elapsed}s"
 
             - name: Install Typesense Database
               run: |
@@ -86,3 +110,9 @@ jobs:
 
             - name: Unit Tests
               run: vendor/bin/phpunit --colors=always
+
+            - name: Cleanup containers
+              if: always()
+              run: |
+                  docker stop elasticsearch typesense || true
+                  docker rm elasticsearch typesense || true
