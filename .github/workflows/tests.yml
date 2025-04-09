@@ -62,7 +62,7 @@ jobs:
                   --name typesense \
                   -v /tmp/typesense-data:/data \
                   -v /tmp/typesense-analytics-data:/analytics-data \
-                  ghcr.io/typesense/typesense:28.0 \
+                  typesense/typesense:0.28.0 \
                   --api-key=xyz \
                   --data-dir=/data \
                   --enable-search-analytics=true \
