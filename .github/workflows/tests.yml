@@ -22,12 +22,6 @@ jobs:
             - name: Checkout
               uses: actions/checkout@v4
 
-            - name: Login to Docker Hub
-              uses: docker/login-action@v3
-              with:
-                username: ${{ vars.DOCKERHUB_USERNAME }}
-                password: ${{ secrets.DOCKERHUB_TOKEN }}
-
             - name: Setup PHP
               uses: shivammathur/setup-php@v2
               with:
@@ -57,12 +51,12 @@ jobs:
 
             - name: Install Typesense Database
               run: |
-                  docker run -id \
+                  docker run -d \
                   -p 8108:8108 \
                   --name typesense \
                   -v /tmp/typesense-data:/data \
                   -v /tmp/typesense-analytics-data:/analytics-data \
-                  typesense/typesense:28.0 \
+                  ghcr.io/typesense/typesense:28.0 \
                   --api-key=xyz \
                   --data-dir=/data \
                   --enable-search-analytics=true \
